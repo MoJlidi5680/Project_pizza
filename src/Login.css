@@ -1,0 +1,99 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://cdn1.zfood.co.uk/276/images/n1p_underlogin.jpg?auto=compress");
+  background-size: cover;
+  background-position: top center;
+  min-height: 100vh; /* Ajuster cette valeur si nécessaire pour couvrir toute la hauteur de l'écran */
+}
+
+.login-container {
+  max-width: 400px;
+  margin-top: -100px; /* Ajuster cette valeur pour décaler le formulaire par rapport à l'image */
+  padding: 20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.308);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-left: 70px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.input-with-icon {
+  width: 300px;
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.input-icon {
+  margin-right: 8px;
+  font-size: 20px;
+  color: #ccc;
+}
+
+.login input {
+  height: 10px;
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  color: white;
+  background: transparent;
+}
+
+button {
+  width: 150px;
+  margin: 10px auto;
+  padding: 12px 20px;
+  background-color: #FF9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #F57C00;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}

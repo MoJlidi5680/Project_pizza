@@ -1,38 +1,359 @@
-.App {
-  text-align: center;
+nav{
+  background-color: #1a1a1a;
+  width: 100%;
+  margin: 0 auto;
+  height: 72px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+
+}
+.leftside img{
+  background-blend-mode:screen;
+  width: 90px;
+  height: 70px;
+}
+.rightside{
+  margin-right: 25px;
+  display: flex;
+  margin-top: 13px;
+  gap: 20px;
+
+}
+.link{
+  margin-left: 25px;
+  display: flex;
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+.link:hover {
+  color: #FF9800;   
+}
+
+.home img{
+  width: 100%;
+  height: 555px;
+}
+
+.home {
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 40%;
+  left: 150px;
+  transform: translate(-50%, -50%);
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.content h1 {
+  margin-left: 250px;
+  font-size: 40px;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.content button {
+  margin-left: 200px;
+  background-color: #FF9800;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.menutitle {
+  margin-top: -30px;
+  font-family: cursive;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.menulist {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 50px;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+.menu .add{
+  margin-top: -50px;
+  margin-left: 85%;
+}
+.recherche{
+  margin-top: 25px;
+  margin-left: 50%;
+  margin-bottom: 10px;
+  background-color: rgba(128, 128, 128, 0.171);
+}
+/* Card.css*/
+.card {
+  text-align: center;
+  background-color: #beb9b957; /* Replace with your desired background color */
+  border-radius: 15px;
+  width: 250px;
+  height: 260px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 100%;
+  height: 100px; 
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h1 {
+  color:black;
+  font-size: 20.2px;
+  font-weight: 375;
+  margin-top: 1px;
+ 
+}
+
+.card h1:last-child {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 1px;
+  color: #FF9800; 
+}
+
+.card:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Contact*/
+.backroundcolor{
+  background-color: white;
+}
+
+.contact {
+  width: 90%;
+  height: 468px;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftside{
+  width: 40%;
+}
+.contact .leftside img {
+  margin-top: 10px;
+  margin-left: -30px;
+  width: 600px;
+  height: 500px;
+  border-radius: 35%;
+}
+
+.contact .rightside {
+  width: 42%;
+  margin-top: 0px;
+  margin-left: 40px;
+  padding: 20px;
+  background-color: #fbbd047c; 
+  border-radius: 30px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact h1 {
+  margin-top: -4px;
+  margin-bottom: 2px;
+  margin-left: 200px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.contact form {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact label {
+  margin-left: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #FFFFFF; 
+  border: none;
+  border-radius: 5px;
+}
+
+.contact textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact .bconatct {
+  margin-top: 10  px;
+  margin-left: 150px;
+  width: 200px;
+  background-color: #FF9800;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+ 
+}
+
+.contact button:hover {
+  background-color: #FFA726; 
+}
+
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .contact .leftside img {
+    margin-bottom: 20px;
   }
+
+  .contact .rightside {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+/* About.css */
+
+.about-container {
+  width: 700px;
+  height:400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #312626;
+  border-radius: 20px;
+  background-color: #9c999957;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.about-container:hover {
+  transform: scale(1.05);
+}
+
+.about-container h2 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.979);
+}
+
+.about-container p {
+  margin-top: 2px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #241313;
+}
+
+.about-container p:last-child {
+  margin-bottom: 0;
+}
+
+/*Add.jsx*/
+.modale {
+  position: absolute;
+  top: 0; /* Positionner le bouton Add en haut du conteneur */
+  right: 0; /* Positionner le bouton Add à droite du conteneur */
+  width: 100%;
+  height: 900px;
+  background-color: rgba(0, 0, 0, 0.582);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.modale .add{
+  width: 600px;
+  height: 350px;
+  margin: 100px auto;
+  background-color: #313030b4;
+}
+.add .x{
+  padding: 0px 0px;
+  width: 35px;
+  height: 35px;
+  margin-top: 13px;
+  margin-left: 550px;
+}
+.add h2{
+  margin-top: -10px;
+  color: white;
+  margin-left: 200px;
+  font-size: 25px;
+}
+.add form{
+  width: 80%;
+  margin: 10px auto;
+}
+
+.add form div label{
+  color: white;
+}
+
+.l1{
+  margin-bottom: 10px;
+  margin-left: 82px;
+}
+.l2{
+  margin-left: 38px;
+  margin-bottom: 10px;
+}
+::placeholder{
+  color: white;
+}
+.l3{
+  margin-left: 92px;
+}
+
+.add form button{
+  width: 200px;
+  margin: 25px auto;
 }
